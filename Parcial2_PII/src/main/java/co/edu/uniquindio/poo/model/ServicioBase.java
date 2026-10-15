@@ -26,8 +26,16 @@ public abstract class ServicioBase implements IServicioTecnologico {
         this.costoBase = costoBase;
     }
 
-    @Override public String getCodigo() { return codigo; }
-    @Override public String getNombre() { return nombre; }
-    @Override public String getDescripcion() { return descripcion; }
-    @Override public double getCosto() { return costoBase; }
+    @Override public String getCodigo() {
+        return codigo;
+    }
+    @Override public String getNombre() {
+        return nombre;
+    }
+    @Override public String getDescripcion() {
+        return descripcion;
+    }
+    @Override public double getCosto() {
+        return costoBase;
+    }
 }
