@@ -27,7 +27,7 @@ public class App {
     public static Empresa getEmpresa() { return EMPRESA; }
 
     public static void mostrarVista(String vista, double ancho, double alto) throws IOException {
-        FXMLLoader loader = new FXMLLoader(App.class.getResource("/fxml/" + vista));
+        FXMLLoader loader = new FXMLLoader(App.class.getResource("/view/" + vista));
         Scene scene = new Scene(loader.load(), ancho, alto);
         stage.setScene(scene);
     }
