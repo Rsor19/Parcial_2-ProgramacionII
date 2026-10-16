@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo;
 
-import co.edu.uniquindio.poo.model.Empresa;
+import co.edu.uniquindio.poo.Controller.SistemaController;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -21,10 +21,10 @@ public class App {
             }
         });
     }
-    private static final Empresa EMPRESA = new Empresa("Tech Solutions");
+    private static final SistemaController SISTEMA = new SistemaController("Tech Solutions");
     private static Stage stage;
 
-    public static Empresa getEmpresa() { return EMPRESA; }
+    public static SistemaController getSistema() { return SISTEMA; }
 
     public static void mostrarVista(String vista, double ancho, double alto) throws IOException {
         FXMLLoader loader = new FXMLLoader(App.class.getResource("/view/" + vista));
